@@ -7,8 +7,8 @@
       <v-alert
       border="left"
       colored-border
-      color="indigo"
-      elevation="2"
+      color="#212121"
+      elevation="3"
     >
       Aliquam eu nunc. Fusce commodo aliquam arcu. In consectetuer turpis ut velit. Nulla facilisi..
 
