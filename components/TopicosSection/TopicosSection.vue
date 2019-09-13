@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import IMG from '@/components/ImagensHome.vue';
-import Topico from '@/components/TopicosHome.vue';
+import IMG from '@/components/TopicosSection/Imagem.vue';
+import Topico from '@/components/TopicosSection/Topico.vue';
 
 export default {
     components: { IMG, Topico }

@@ -18,41 +18,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-carousel
-        hide-delimiters
-        cycle
-        height="400"
-        hide-delimiter-background
-        show-arrows-on-hover
-      >
-        <v-carousel-item>
-            <v-row
-              class="fill-height"
-              align="center"
-              justify="center"
-            >
-              <v-img src="slider/1.jpg" position="center center"></v-img>
-            </v-row>
-        </v-carousel-item>
-        <v-carousel-item>
-            <v-row
-              class="fill-height"
-              align="center"
-              justify="center"
-            >
-              <v-img src="slider/2.jpg"></v-img>
-            </v-row>
-        </v-carousel-item>
-        <v-carousel-item>
-            <v-row
-              class="fill-height"
-              align="center"
-              justify="center"
-            >
-              <v-img src="slider/3.jpg"></v-img>
-            </v-row>
-        </v-carousel-item>
-      </v-carousel>
+    <Carousel/>
 
     <v-content style="padding: 32px;">
       <v-container>
@@ -60,24 +26,16 @@
       </v-container>
     </v-content>
 
-    <v-footer
-      dark
-      
-    >
-    <div style="width: 100%" v-if="$vuetify.breakpoint.smAndUp" class="d-flex justify-space-between">
-      <span class="caption">LLPG Soluções ®</span>
-      <span class="caption">Áreas Metropolitanas: 9999-9999  |  Demais localidades: 0800-999-9999</span>
-      <span class="caption">&copy; 2019</span>
-    </div>
-    <div style="width: 100%" v-else class="d-flex justify-center">
-      <span class="caption">LLPG Soluções ®</span>
-    </div>
-    </v-footer>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
+import Carousel from '../components/LayoutItems/Carousel';
+import Footer from '../components/LayoutItems/Footer';
+
 export default {
+  components: { Carousel, Footer },
   data () {
     return {
       fixed: true,
