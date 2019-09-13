@@ -54,16 +54,15 @@
         </v-carousel-item>
       </v-carousel>
 
-    <v-content>
+    <v-content style="padding: 32px;">
       <v-container>
         <nuxt/>
       </v-container>
     </v-content>
 
     <v-footer
-      color="indigo"
       dark
-      app
+      
     >
     <div style="width: 100%" v-if="$vuetify.breakpoint.smAndUp" class="d-flex justify-space-between">
       <span class="caption">LLPG Soluções ®</span>
